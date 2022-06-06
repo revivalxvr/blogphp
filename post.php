@@ -9,8 +9,9 @@ $post = $result->fetch_object();
 <div class="card">
    <h2><?php echo $post->title ?></h2>
    <h5><?php echo $post->createdAt ?></h5>
-   <div class="fakeimg" style="height:200px;">Image</div>
+   <div><img src="uploads/<?php echo $post->image?>"width="30%"></div>
    <p><?php echo $post->content ?></p>
 </div>
 <a href="post.php?id=<?php echo $post->id ?>"><h2><?php echo $post->title; ?></h2></a> 
+
 <?php include "footer.php" ?>

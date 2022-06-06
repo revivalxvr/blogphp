@@ -4,18 +4,19 @@
  <div class="rightcolumn">
    <div class="card">
      <h2>About Me</h2>
-    <img src="uploads/jln.JPG" width="100%"/>
-     <p>Healing Time with my Frends</p>
+    <img src="uploads/sunset.jpg" width="100%"/>
+     <p>Sunset at Kupang</p>
    </div>
    <div class="card">
      <h3>Popular Post</h3>
      <a href="post.php"><img src="uploads/revival.JPG"width="50%"></a>
      <a href="post.php"><img src="uploads/hope.jpg"width="50%"></a>
-     <a href="post.php"><img src="uploads/sunset.jpg"width="50%"></a>
+     <a href="post.php"><img src="uploads/jln.JPG"width="50%"></a>
    </div>
    <div class="card">
      <h3>Follow Me on Instagram</h3>
-     <p>@revivalxvr</p>
+     <p><a href="@revivalxvr"></a>@revivalxvr</p>
+    
    </div>
  </div>
 </div>

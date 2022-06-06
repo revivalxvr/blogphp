@@ -1,8 +1,8 @@
 <?php
-include "../header.php";
+include "header.php";
  
 if($_POST["ngapain"] == 'insert') {
-   $target_dir = "../uploads/";
+   $target_dir = "uploads/";
    $target_file = $target_dir . basename($_FILES["image"]["name"]);
    move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
    $title = $_POST['title'];
@@ -23,11 +23,11 @@ while($post = $posts->fetch_object()) {
    <div class="card">
        <a href="post.php?id=<?php echo $post->id ?>"><h2><?php echo $post->title; ?></h2></a>
        <h5><?php echo $post->createdAt; ?></h5>
-       <div class="fakeimg" style="height:200px;">Image</div>
+       <div><img src="../uploads/<?php echo $post->image?>"width="30%"></</div>
        <a href="update.php?id=<?php echo $post->id ?>">Edit</a>
        <a href="index.php?delete=artikel&id=<?php echo $post->id ?>">delete</a>
    </div>
    <?php
 }
 ?>
-<?php include "../footer.php" ?>
+<?php include "footer.php" ?>
